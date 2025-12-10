@@ -1,0 +1,58 @@
+
+class Player{
+
+    deck;
+    hand;
+    discardPile;
+
+    constructor(){
+        this.deck = [];
+        this.hand = [];
+        this.discardPile = [];
+    }
+
+    drawCard() {
+        if (this.deck.length === 0) {
+            this.reshuffleDiscardIntoDeck();
+        }
+        if (this.deck.length > 0) {
+            const drawnCard = this.deck.pop();
+            this.hand.push(drawnCard);
+            return drawnCard;
+        }
+    }
+}
+
+class Card{
+
+    title;
+    imageUrl;
+
+    constructor(title, imageUrl){
+        this.title = title;
+        this.imageUrl = imageUrl;
+    }
+
+}
+
+class PlayerCard extends Card{
+    lockOReffect;
+
+    constructor(title, imageUrl, lockOReffect){
+        super (title, imageUrl);
+        this.lockOReffect = lockOReffect;
+    }
+}
+
+class EventCard extends Card{
+    description;
+    failedEffect;
+    lock;
+
+    constructor(title, imageUrl, description, failedEffect, lock){
+        super (title, imageUrl);
+        this.description = description;
+        this.failedEffect = failedEffect;
+        this.lock = lock;
+    }
+}
