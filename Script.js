@@ -21,6 +21,29 @@ class Player{
             return drawnCard;
         }
     }
+
+    drawMultipleCards(numCards) {
+        for (let i = 0; i < numCards; i++) {
+            this.drawCard();
+        }
+    }
+
+    reshuffleDiscardIntoDeck() {
+        console.log("Reshuffling discard pile into deck.");
+        this.deck = this.discardPile;
+        this.discardPile = [];
+        this.shuffleDeck();
+    }
+
+    shuffleDeck() {
+        console.log("Shuffling deck.");
+        for (let i = this.deck.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [this.deck[i], this.deck[j]] = [this.deck[j], this.deck[i]];
+        }
+    }
+
+
 }
 
 class Card{
