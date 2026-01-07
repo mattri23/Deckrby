@@ -1,0 +1,11 @@
+[
+  {"titolo":"GOAL!!","effetto_lock":["P","P","C","M"],"quantita":1},
+  {"titolo":"tiro","effetto_lock":["P","P"],"quantita":3},
+  {"titolo":"passaggio","effetto_lock":["P","C"],"quantita":2},
+  {"titolo":"fallo","effetto_lock":["P","M"],"quantita":1},
+  {"titolo":"riposo","effetto_lock":["C"],"quantita":3},
+  {"titolo":"parata","effetto_lock":["M"],"quantita":2},
+  {"titolo":"sprint","effetto_lock":["draw 2"],"quantita":1},
+  {"titolo":"tifo","effetto_lock":["+ lock [P]"],"quantita":1},
+  {"titolo":"2o tempo","effetto_lock":["shuffle + 1"],"quantita":1}
+]
