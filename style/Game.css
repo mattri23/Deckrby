@@ -25,3 +25,13 @@ footer{
     bottom: 0;
     width: 100%;
 }
+
+#lifeCounter #deckArea{
+    height: 50%;
+    width: 100%;
+}
+
+#nextEncounterArea #eventArea #infoArea{
+    height: 100%;
+    width: 33%;
+}

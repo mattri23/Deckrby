@@ -1,11 +1,6 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const title = document.getElementById("title");
-    title.addEventListener("click", () => {
-        window.location.href = "index.php";
-    });
-})
 class Player{
 
+    lifePoints;
     deck;
     hand;
     discardPile;
@@ -14,6 +9,7 @@ class Player{
         this.deck = [];
         this.hand = [];
         this.discardPile = [];
+        this.lifePoints = 3;
     }
 
     drawCard() {
@@ -83,4 +79,30 @@ class EventCard extends Card{
         this.failedEffect = failedEffect;
         this.lock = lock;
     }
+}
+
+
+let lifeCounterBoard = document.querySelector("#lifeCounter");
+const player = new Player();
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const title = document.getElementById("title");
+    title.addEventListener("click", () => {
+        window.location.href = "index.php";
+    });
+
+    baseSetup();
+
+})
+
+function baseSetup(){
+
+    for (let i = 0; i < player.lifePoints; i++) {
+        let heart = document.createElement('img');
+        heart.src = 'images/heart.png';
+        heart.alt = 'Vita';
+        lifeCounterBoard.appendChild(heart);
+    }
+
 }
