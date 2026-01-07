@@ -1,4 +1,9 @@
-
+document.addEventListener("DOMContentLoaded", () => {
+    const title = document.getElementById("title");
+    title.addEventListener("click", () => {
+        window.location.href = "index.php";
+    });
+})
 class Player{
 
     deck;
