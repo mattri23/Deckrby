@@ -1,0 +1,11 @@
+[
+  {"titolo":"maratona","effetto_lock":["C","C","P","M"],"quantita":1},
+  {"titolo":"corsa","effetto_lock":["C","C"],"quantita":3},
+  {"titolo":"lancioPeso","effetto_lock":["C","P"],"quantita":2},
+  {"titolo":"saltoLungo","effetto_lock":["C","M"],"quantita":1},
+  {"titolo":"lancioDisco","effetto_lock":["P"],"quantita":3},
+  {"titolo":"lancioMartello","effetto_lock":["M"],"quantita":2},
+  {"titolo":"olimpiadi","effetto_lock":["draw 2"],"quantita":1},
+  {"titolo":"marcia","effetto_lock":["+ lock [C]"],"quantita":1},
+  {"titolo":"staffetta","effetto_lock":["shuffle + 1"],"quantita":1}
+]

@@ -1,0 +1,11 @@
+[
+  {"titolo":"Homerun","effetto_lock":["M","M","P","C"],"quantita":1},
+  {"titolo":"battere","effetto_lock":["M","M"],"quantita":3},
+  {"titolo":"ricevere","effetto_lock":["M","P"],"quantita":2},
+  {"titolo":"corsa base","effetto_lock":["M","C"],"quantita":1},
+  {"titolo":"lancio","effetto_lock":["P"],"quantita":3},
+  {"titolo":"balk","effetto_lock":["C"],"quantita":2},
+  {"titolo":"hitAndRun","effetto_lock":["draw 2"],"quantita":1},
+  {"titolo":"bunt","effetto_lock":["+ lock [M]"],"quantita":1},
+  {"titolo":"sostituisci","effetto_lock":["shuffle + 1"],"quantita":1}
+]
