@@ -6,13 +6,13 @@ if ($action == "getStarterDeck") {
     $classType = $_POST["classType"];
     switch ($classType) {
         case "Atleta":
-            $file = fopen("carteAtletaIniziali.txt", "r");
+            $file = json_decode(file_get_contents("carteAtletaIniziali.json"), true);
             break;
         case "Baseball":
-            $file = fopen("carteBaseballIniziali.txt", "r");
+            $file = json_decode(file_get_contents("carteBaseballIniziali.json"), true);
             break;
         case "Calciatore":
-            $file = fopen("carteCalciatoreIniziali.txt", "r");
+            $file = json_decode(file_get_contents("carteCalciatoreInizial.json"), true);
             break;
     }
 }
