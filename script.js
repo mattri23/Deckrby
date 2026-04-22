@@ -108,6 +108,29 @@ function updateHP(){
     }
 }
 
+function askClassChoice() {
+    const message = "Scegli la classe da giocare:\n- Atleta\n- Baseball\n- Calciatore";
+    const defaultClass = "Atleta";
+
+    while (true) {
+        const choice = prompt(message, defaultClass);
+        if (choice === null) {
+            return defaultClass;
+        }
+
+        const normalizedChoice = choice.trim().toLowerCase();
+        const selectedClass = AVAILABLE_CLASSES.find(
+            (className) => className.toLowerCase() === normalizedChoice
+        );
+
+        if (selectedClass) {
+            return selectedClass;
+        }
+
+        alert("Classe non valida. Inserisci Atleta, Baseball o Calciatore.");
+    }
+}
+
 function loadStarterDeck(clasType){
     let request = new XMLHttpRequest();
     request.open("post", `elabora.php&action=getStarterDeck&classType=${String.toString(clasType)}`);
