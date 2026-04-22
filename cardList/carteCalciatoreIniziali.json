@@ -6,6 +6,6 @@
     {"titolo":"riposo", "effetto": null, "lock": ["C"], "quantita": 3},
     {"titolo":"parata", "effetto": null, "lock": ["M"], "quantita": 2},
     {"titolo":"sprint", "effetto": ["draw 2"], "lock": null, "quantita": 1},
-    {"titolo":"tifo", "effetto": ["+ lock ['P']"], "lock": null, "quantita": 1},
+    {"titolo":"tifo", "effetto": ["+ lock [P]"], "lock": null, "quantita": 1},
     {"titolo":"2o tempo", "effetto": ["shuffle + 1"], "lock": null, "quantita": 1}
 ]
