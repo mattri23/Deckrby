@@ -1,11 +1,11 @@
 [
-  {"titolo":"GOAL!!","effetto_lock":["P","P","C","M"],"quantita":1},
-  {"titolo":"tiro","effetto_lock":["P","P"],"quantita":3},
-  {"titolo":"passaggio","effetto_lock":["P","C"],"quantita":2},
-  {"titolo":"fallo","effetto_lock":["P","M"],"quantita":1},
-  {"titolo":"riposo","effetto_lock":["C"],"quantita":3},
-  {"titolo":"parata","effetto_lock":["M"],"quantita":2},
-  {"titolo":"sprint","effetto_lock":["draw 2"],"quantita":1},
-  {"titolo":"tifo","effetto_lock":["+ lock [P]"],"quantita":1},
-  {"titolo":"2o tempo","effetto_lock":["shuffle + 1"],"quantita":1}
+  {"titolo":"GOAL!!", "lock": ["P","P","C","M"], "effetto": null, "quantita":1},
+  {"titolo":"tiro","lock": ["P","P"],"effetto": null,"quantita":3},
+    {"titolo":"passaggio", "effetto": null, "lock": ["P", "C"], "quantita": 2},
+    {"titolo":"fallo", "effetto": null, "lock": ["P", "M"], "quantita": 1},
+    {"titolo":"riposo", "effetto": null, "lock": ["C"], "quantita": 3},
+    {"titolo":"parata", "effetto": null, "lock": ["M"], "quantita": 2},
+    {"titolo":"sprint", "effetto": ["draw 2"], "lock": null, "quantita": 1},
+    {"titolo":"tifo", "effetto": ["+ lock ['P']"], "lock": null, "quantita": 1},
+    {"titolo":"2o tempo", "effetto": ["shuffle + 1"], "lock": null, "quantita": 1}
 ]

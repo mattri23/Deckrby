@@ -1,11 +1,12 @@
 [
-  {"titolo":"maratona","effetto_lock":["C","C","P","M"],"quantita":1},
-  {"titolo":"corsa","effetto_lock":["C","C"],"quantita":3},
-  {"titolo":"lancioPeso","effetto_lock":["C","P"],"quantita":2},
-  {"titolo":"saltoLungo","effetto_lock":["C","M"],"quantita":1},
-  {"titolo":"lancioDisco","effetto_lock":["P"],"quantita":3},
-  {"titolo":"lancioMartello","effetto_lock":["M"],"quantita":2},
-  {"titolo":"olimpiadi","effetto_lock":["draw 2"],"quantita":1},
-  {"titolo":"marcia","effetto_lock":["+ lock [C]"],"quantita":1},
-  {"titolo":"staffetta","effetto_lock":["shuffle + 1"],"quantita":1}
+  {"titolo":"maratona","effetto":null,"lock":["C","C","P","M"],"quantita":1},
+  {"titolo":"corsa","effetto":null,"lock":["C","C"],"quantita":3},
+  {"titolo":"lancioPeso","effetto":null,"lock":["C","P"],"quantita":2},
+  {"titolo":"saltoLungo","effetto":null,"lock":["C","M"],"quantita":1},
+  {"titolo":"lancioDisco","effetto":null,"lock":["P"],"quantita":3},
+  {"titolo":"lancioMartello","effetto":null,"lock":["M"],"quantita":2},
+  {"titolo":"olimpiadi","effetto":["draw 2"],"lock":null,"quantita":1},
+  {"titolo":"marcia","effetto":["+ lock [C]"],"lock":null,"quantita":1},
+  {"titolo":"staffetta","effetto":["shuffle + 1"],"lock":null,"quantita":1}
 ]
+
