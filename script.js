@@ -60,11 +60,13 @@ class Card{
 }
 
 class PlayerCard extends Card{
-    lockOReffect;
+    lock;
+    effect
 
-    constructor(title, imageUrl, lockOReffect){
+    constructor(title, imageUrl, lock, effect){
         super (title, imageUrl);
-        this.lockOReffect = lockOReffect;
+        this.lock = lock;
+        this.effect = effect
     }
 }
 
@@ -96,13 +98,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
 })
 
-function baseSetup(){
-
+function updateHP(){
+    lifeCounterBoard.innerHTML = "";
     for (let i = 0; i < player.lifePoints; i++) {
         let heart = document.createElement('img');
         heart.src = 'images/heart.png';
         heart.alt = 'Vita';
         lifeCounterBoard.appendChild(heart);
     }
+}
+
+function loadStarterDeck(clasType){
+    let request = new XMLHttpRequest();
+    request.open("post", `elabora.php&action=getStarterDeck&classType=${String.toString(clasType)}`);
+    request.send();
+    request.onload = () => {
+
+    }
+}
+
+function baseSetup(){
+
+    updateHP();
+
+
 
 }
